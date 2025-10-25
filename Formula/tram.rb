@@ -17,6 +17,6 @@ class Tram < Formula
 
 
   test do
-    system "#{bin}/wtm", "--help"
+    system "#{bin}/tram", "--help"
   end
 end

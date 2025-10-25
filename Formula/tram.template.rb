@@ -14,9 +14,7 @@ class Tram < Formula
     bin.install "tram"
   end
 
-
-
   test do
-    system "#{bin}/wtm", "--help"
+    system "#{bin}/tram", "--help"
   end
 end
