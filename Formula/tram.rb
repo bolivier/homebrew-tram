@@ -9,7 +9,7 @@ class Tram < Formula
   depends_on "clojure"
 
   def install
-    libexec.install "tra-cli.jar"
+    libexec.install "tram-cli.jar"
 
     (bin/"tram").write <<-SH
       #! /usr/bin/env bash
