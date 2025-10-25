@@ -1,8 +1,8 @@
 class Tram < Formula
   desc "A web framework written in Clojure"
   homepage "https://github.com/bolivier/tram"
-  url "https://github.com/bolivier/tram/releases/download/v0.0.1/tram.tar.gz"
-  sha256 "e0b202f355f1c3a228f27e6ce50d5c26ac44d2fd82b9f3cb942fa4c6e31ad2ac"
+  url "https://github.com/bolivier/tram/releases/download/v0.0.3/tram.tar.gz"
+  sha256 "d2114ded1cadc74f6edf802f2df385eca9288585362e8fcf650f241548b0e80f"
   license "MIT"
 
   depends_on "borkdude/brew/babashka"
@@ -13,8 +13,6 @@ class Tram < Formula
     libexec.install "bb.edn"
     bin.install "tram"
   end
-
-
 
   test do
     system "#{bin}/tram", "--help"
