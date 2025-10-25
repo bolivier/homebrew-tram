@@ -11,13 +11,18 @@ class Tram < Formula
   def install
     libexec.install "tram.jar"
 
-    (bin/"tram").write <<-SH
+    script = libexec/"tram"
+
+
+    script.write <<-SH
       #! /usr/bin/env bash
       set -euo pipefail
       exec bb "#{libexec}/tram.jar" "$@"
     SH
 
-    (bin/"tram").chmod 0555
+    script.chmod 0755
+
+    bin.install_symlink script => "tram"
   end
 
   test do
