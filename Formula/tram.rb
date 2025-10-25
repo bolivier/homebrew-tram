@@ -16,6 +16,8 @@ class Tram < Formula
       set -euo pipefail
       exec bb "#{libexec}/tram.jar" "$@"
     SH
+
+    (bin/"tram").chmod 0555
   end
 
   test do
