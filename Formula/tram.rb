@@ -1,8 +1,8 @@
 class Tram < Formula
   desc "A web framework written in Clojure"
   homepage "https://github.com/bolivier/tram"
-  url "https://github.com/bolivier/tram/releases/download/v0.0.4/tram.tar.gz"
-  sha256 "8e3edf72be1bd56606383f2c33fbe8efc9b01072242131ba61609fcb9e595256"
+  url "https://github.com/bolivier/tram/releases/download/v0.0.5/tram.tar.gz"
+  sha256 "7c7fbbdbbcc113bda27fa5e7faa590354ba12fb39ea90345f839369a63223afb"
   license "MIT"
 
   depends_on "borkdude/brew/babashka"
